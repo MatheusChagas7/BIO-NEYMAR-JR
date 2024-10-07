@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*INÍCIO SECAO BANNER*/
+
+.secao-banner{
+    font-family: 'Ysabeau Infant', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.secao-banner video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-perfil::before{
+    content: "";
+    width: 215px;
+    height: 215px;
+    position: absolute;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.info-perfil img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+
+.secao-banner h1{
+    color: #fff;
+    text-shadow: 3px 4px 1px #000000;
+}
+
+.nome-bio{
+    position: relative;
+}
+
+.nome-bio h1::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    bottom: 2px;
+    left: 1px;
+    border-radius: 4px;
+}
+
+.nome-bio h1::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-image: url('../assets/icons/verificado.png');
+    background-size: cover;
+    bottom: 0px;
+}
+
+.container-links{
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-links a{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+a{
+    background-color: #0200006e;
+    color: #fff;
+    border-radius: 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #fff;
+    color: #000000;
+    font-weight: bold;
+}
+
+a img{
+    width: 20px;
+    position: absolute;
+    left: 15px;
+}
+
+
+/*FIM SECAO BANNER*/
+
+
+/* INÍCIO SECAO ESTATISTICAS */
+
+.secao-estatisticas{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('../assets/img/imagem-de-fundo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+th, td{
+    padding: 20px;
+    align-items: center;
+}
+
+table tbody tr td:nth-child(1){
+    display: flex;
+    gap: 10px;
+}
+
+tbody tr td img{
+    width: 30px;
+}
+
+.secao-estatisticas h2{
+    font-size: 74px;
+    color: #fff;
+    text-shadow: 3px 4px 1px #000000;
+}
+
+tbody tr:nth-of-type(even), thead tr:nth-of-type(odd){
+    background-color: #000000cc;
+    color: #fff;
+}
+
+tbody tr:nth-of-type(odd){
+    background-color: #fff;
+    color: #000;
+}
+
+/* FIM SECAO ESTATISTICAS */
