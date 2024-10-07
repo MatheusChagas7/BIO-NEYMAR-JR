@@ -153,7 +153,7 @@ tbody tr td img{
 .secao-estatisticas h2{
     font-size: 74px;
     color: #fff;
-    text-shadow: 3px 4px 1px #000000;
+    text-shadow: 3px 6px 1px #000000;
 }
 
 tbody tr:nth-of-type(even), thead tr:nth-of-type(odd){
